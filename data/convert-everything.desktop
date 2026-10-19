@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Convert Everything
+Comment=All-in-one File Converter for Ubuntu (Images, Audio, Video, PDF)
+Comment[de]=Universeller Dateikonverter für Ubuntu (Bilder, Audio, Video, PDF)
+Exec=convert-everything --gui %U
+Icon=convert-everything
+Terminal=false
+Type=Application
+Categories=Utility;AudioVideo;Graphics;
+MimeType=image/*;audio/*;video/*;application/pdf;
+StartupNotify=true
+Actions=PDFMerger;
+
+[Desktop Action PDFMerger]
+Name=PDFs zusammenfügen...
+Exec=convert-everything --pdf-merge-dialog %U

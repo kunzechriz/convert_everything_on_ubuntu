@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E95420"/>
+      <stop offset="50%" stop-color="#77216F"/>
+      <stop offset="100%" stop-color="#2C001E"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FFA3"/>
+      <stop offset="100%" stop-color="#00D2FF"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDD00"/>
+      <stop offset="100%" stop-color="#FFAA00"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect x="8" y="8" width="112" height="112" rx="26" fill="url(#bgGrad)" filter="url(#shadow)"/>
+
+  <!-- Subtle inner border highlight -->
+  <rect x="9" y="9" width="110" height="110" rx="25" fill="none" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
+
+  <!-- Upper Arrow (Transform Clockwise) -->
+  <g fill="url(#arrowGrad1)" filter="url(#shadow)">
+    <path d="M 64 28 A 36 36 0 0 1 98 56 L 106 56 L 92 72 L 78 56 L 86 56 A 24 24 0 0 0 64 40 A 24 24 0 0 0 42.8 51.5 L 32.8 44.5 A 36 36 0 0 1 64 28 Z"/>
+  </g>
+
+  <!-- Lower Arrow (Transform Clockwise) -->
+  <g fill="url(#arrowGrad2)" filter="url(#shadow)">
+    <path d="M 64 100 A 36 36 0 0 1 30 72 L 22 72 L 36 56 L 50 72 L 42 72 A 24 24 0 0 0 64 88 A 24 24 0 0 0 85.2 76.5 L 95.2 83.5 A 36 36 0 0 1 64 100 Z"/>
+  </g>
+
+  <!-- Central Badge Symbol -->
+  <circle cx="64" cy="64" r="9" fill="#FFFFFF" fill-opacity="0.95"/>
+  <circle cx="64" cy="64" r="5" fill="#77216F"/>
+</svg>

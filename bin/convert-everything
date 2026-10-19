@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+import sys
+import os
+from pathlib import Path
+
+# Add project root or install location to sys.path
+script_dir = Path(__file__).resolve().parent
+project_root = script_dir.parent
+
+if (project_root / "convert_everything").is_dir():
+    sys.path.insert(0, str(project_root))
+else:
+    # Check ~/.local/share/convert-everything
+    share_root = Path.home() / ".local/share/convert-everything"
+    if share_root.is_dir():
+        sys.path.insert(0, str(share_root))
+
+from convert_everything.cli import main
+
+if __name__ == "__main__":
+    main()

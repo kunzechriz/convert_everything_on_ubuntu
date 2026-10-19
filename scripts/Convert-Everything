@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Nautilus Script Fallback for Convert Everything
+# Places files into convert-everything GUI
+convert-everything "$@" &
